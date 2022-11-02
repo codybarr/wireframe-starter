@@ -1,20 +1,10 @@
 ---
 import Layout from 'layouts/Layout.astro'
-import Section from 'components/Section.jsx'
-import Header from 'components/Header.jsx'
-import Footer from 'components/Footer.jsx'
+import { Section } from 'components/shared.jsx'
 ---
 
 <Layout title="Home">
-  <div class="flex flex-col min-h-screen">
-    <Header title="Awesome Company" />
-    <main class="flex-grow">
-      <Section className="bg-company-eggshell">
-        <h2>Section</h2>
-      </Section>
-    </main>
-    <Footer className="bg-company-slate text-white">
-      <p>This is the footer</p>
-    </Footer>
-  </div>
+  <Section className="bg-company-eggshell text-company-slate">
+    <h2>Home</h2>
+  </Section>
 </Layout>
